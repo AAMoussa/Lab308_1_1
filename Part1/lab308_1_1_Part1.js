@@ -45,3 +45,45 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   ((n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2) && 
   !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) && 
   (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
+
+// Checking if all numbers are divisable by 5
+let isDivisable;
+if(n1 % 5 == 0 && n2 % 5 == 0 && n3 % 5 == 0 && n4 ){
+    isDivisable = "YAAAY! YES! All Numbers are divisable By 5!";
+    console.log(isDivisable)
+} else{
+    isDivisable = "One or more Numbers aren't divisable by 5!"
+    console.log(isDivisable)
+}
+
+// Checking if all numbers are divisable by 5
+let FirstLgLast;
+    if(n1 > n4 ){
+    FirstLgLast = "YAAAY! YES! The first_number is Greater than the Last_number!";
+    console.log(FirstLgLast);
+} else{
+    FirstLgLast = "OOOH! NO!The first_number is NOT Greater than the Last_number! ";
+    console.log(FirstLgLast);
+}
+
+/*Accomplish the following arithmetic chain:
+Subtract the first number from the second number.
+Multiply the result by the third number.
+Find the remainder of dividing the result by the fourth number.
+ */ 
+let subResult = (n2 - n1);
+console.log("Subtraction results in: " + subResult);
+let multResult = (subResult * n3);
+console.log("Multiplication results in: " + multResult);
+let remResult = (multResult % n4);
+console.log("Division results in a remainder of: " + subResult);
+
+/*Change the way that isOver25 calculates so that we do not need to use the NOT operator (!) in
+other logic comparisons. Rename the variable as appropriate.
+*/
+let isnotLess25 = !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25);
+if(isnotLess25){
+    console.log("Used Negation in initialization to avoid using it later,\n and that had the same result as shown: " + isnotLess25);
+}else{
+    console.log("Used Negation in initialization to avoid using it later,\nand that had A DIFFERENT result as shown: " + isnotLess25);
+}
